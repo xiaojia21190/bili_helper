@@ -22,6 +22,8 @@ Lv6 吧\~\~\~\~
 
 ## 功能列表
 
+
+
 - [x] 通过docker或者云函数执行定时任务。_【运行时间可自定义】_
 - [x] 哔哩哔哩漫画每日自动签到，自动阅读 1 章节 。
 - [x] 每日自动从热门视频中随机观看 1 个视频，分享一个视频。
@@ -74,20 +76,20 @@ Lv6 吧\~\~\~\~
 
 ### 一、使用 腾讯云函数
 
-请参考[腾讯云函数部署](https://github.com/JunzhouLiu/BILIBILI-HELPER/blob/main/docs/scf.md)
+请参考[腾讯云函数部署](https://github.com/xiaojia21190/bili_helper/blob/main/docs/scf.md)
 
 ### 二、使用 Docker
 
 请自行参阅 [Issues/75#issuecomment-731705657][28] 和[基于本项目的衍生项目](#基于本项目的衍生项目)。
 
-[28]: https://github.com/JunzhouLiu/BILIBILI-HELPER/issues/75#issuecomment-731705657
+[28]: https://github.com/xiaojia21190/bili_helper/issues/75#issuecomment-731705657
 
 ### 三、使用 Linux Crontab 方式
 
 1. 在 linux shell 环境执行以下命令，并按照提示输入 SESSDATA，DEDEUSERID，BILI_JCT，SCKEY 四个参数
 
 ```
-wget https://raw.githubusercontent.com/JunzhouLiu/BILIBILI-HELPER/main/setup.sh && chmod +x ./setup.sh && sudo ./setup.sh
+wget https://raw.githubusercontent.com/xiaojia21190/bili_helper/main/setup.sh && chmod +x ./setup.sh && sudo ./setup.sh
 ```
 
 **ps：注意，如果使用自定义配置，请将`config.json`和 jar 包放置在同一目录(使用 setup.sh 安装则需要将`config.json`放置到`{HOME}/BILIBILI-HELPER`)，`v1.2.2`
@@ -96,8 +98,8 @@ wget https://raw.githubusercontent.com/JunzhouLiu/BILIBILI-HELPER/main/setup.sh 
 2. 除此之外，也可以通过点击 [BILIBILI-HELPER/release][30]，下载已发布的版本，解压后将 jar 包手动上传到 Linux 服务器，使用 crontab 完成定时执行，如果使用`crontab`
    请记得`source /etc/profile`和`source ~/.bashrc`,建议直接使用仓库提供的[`start.sh`][31]脚本,注意修改脚本的 jar 包路径和 cookies 参数。
 
-[30]: https://github.com/JunzhouLiu/BILIBILI-HELPER/releases/latest
-[31]: https://github.com/JunzhouLiu/BILIBILI-HELPER/blob/main/start.sh
+[30]: https://github.com/xiaojia21190/bili_helper/releases/latest
+[31]: https://github.com/xiaojia21190/bili_helper/blob/main/start.sh
 
 **crontab 命令示例**
 
