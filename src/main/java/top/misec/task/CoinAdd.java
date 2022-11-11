@@ -82,11 +82,9 @@ public class CoinAdd implements Task {
          * 最后一道安全判断，保证即使前面的判断逻辑错了，也不至于发生投币事故
          */
         while (needCoins > 0 && needCoins <= maxNumberOfCoins) {
-            String bvid;
+            String bvid = null;
             if (coinAddPriority == 1 && addCoinOperateCount < 7) {
                 bvid = getVideoId.getFollowUpRandomVideoBvid();
-            } else {
-                bvid = getVideoId.getRegionRankingVideoBvid();
             }
 
             addCoinOperateCount++;

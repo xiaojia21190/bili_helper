@@ -7,6 +7,7 @@ import top.misec.apiquery.OftenApi;
 import top.misec.login.Verify;
 import top.misec.utils.HttpUtil;
 
+import java.util.Map;
 import java.util.Random;
 
 import static top.misec.task.DailyTask.getDailyTaskStatus;
@@ -26,9 +27,9 @@ public class VideoWatch implements Task {
     public void run() {
 
         JsonObject dailyTaskStatus = getDailyTaskStatus();
-        String bvid = getVideoId.getRegionRankingVideoBvid();
+        Map<String, String> bvid = getVideoId.getRegionRankingVideoBvid();
         if (!dailyTaskStatus.get("watch").getAsBoolean()) {
-            watchVideo(bvid);
+            watchVideo(bvid.get("bvid"));
         } else {
             log.info("本日观看视频任务已经完成了，不需要再观看视频了");
         }
@@ -62,11 +63,11 @@ public class VideoWatch implements Task {
     /**
      * @param bvid 要分享的视频bvid
      */
-    public void dailyAvShare(String bvid) {
-        String requestBody = "bvid=" + bvid + "&csrf=" + Verify.getInstance().getBiliJct();
+    public void dailyAvShare(Map<String, String>  bvid) {
+        String requestBody = "aid=" + bvid.get("aid") + "&csrf=" + Verify.getInstance().getBiliJct();
         JsonObject result = HttpUtil.doPost((ApiList.AvShare), requestBody);
 
-        String videoTitle = OftenApi.getVideoTitle(bvid);
+        String videoTitle = OftenApi.getVideoTitle(bvid.get("bvid"));
 
         if (result.get(STATUS_CODE_STR).getAsInt() == 0) {
             log.info("视频: " + videoTitle + " 分享成功");
