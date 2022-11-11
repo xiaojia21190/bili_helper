@@ -1,19 +1,7 @@
 <div align="center">
 <h1 align="center">
-BILIBILI-HELPER
+bili_helper
 </h1>
-
-[![GitHub stars](https://img.shields.io/github/stars/JunzhouLiu/BILIBILI-HELPER?style=flat-square)](https://github.com/JunzhouLiu/BILIBILI-HELPER/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/JunzhouLiu/BILIBILI-HELPER?style=flat-square)](https://github.com/JunzhouLiu/BILIBILI-HELPER/network)
-[![GitHub issues](https://img.shields.io/github/issues/JunzhouLiu/BILIBILI-HELPER?style=flat-square)](https://github.com/JunzhouLiu/BILIBILI-HELPER/issues)
-[![GitHub license](https://img.shields.io/github/license/JunzhouLiu/BILIBILI-HELPER?style=flat-square)](https://github.com/JunzhouLiu/BILIBILI-HELPER/blob/main/LICENSE)
-[![GitHub All Releases](https://img.shields.io/github/downloads/JunzhouLiu/BILIBILI-HELPER/total?style=flat-square)](https://github.com/JunzhouLiu/BILIBILI-HELPER/releases)
-[![Docker Pulls](https://img.shields.io/docker/pulls/superng6/bilibili-helper?style=flat-square)](https://hub.docker.com/r/superng6/bilibili-helper)
-[![GitHub contributors](https://img.shields.io/github/contributors/JunzhouLiu/BILIBILI-HELPER?style=flat-square)](https://github.com/JunzhouLiu/BILIBILI-HELPER/graphs/contributors)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/JunzhouLiu/BILIBILI-HELPER?style=flat-square)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJunzhouLiu%2FBILIBILI-HELPER.svg?type=flat-square)](https://app.fossa.com/projects/git%2Bgithub.com%2FJunzhouLiu%2FBILIBILI-HELPER?ref=badge_shield)
-
-</div>
 
 ## 工具简介
 
@@ -22,11 +10,7 @@ Lv6 吧\~\~\~\~
 
 **如果觉得好用，顺手点个 Star 吧 ❤**
 
-**仓库地址：[JunzhouLiu/BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)**
-
-**B 站赛事预测助手已发布，每天自动参与 KPL，LPL 赛事预测，赚取硬币。**
-
-**仓库地址：[JunzhouLiu/bilibili-match-prediction](https://github.com/JunzhouLiu/bilibili-match-prediction)**
+**仓库地址：[xiaojia21190/bili_helper](https://github.com/xiaojia21190/bili_helper)**
 
 **请不要滥用相关 API，让我们一起爱护 B 站 ❤**
 
@@ -34,16 +18,6 @@ Lv6 吧\~\~\~\~
 
 **Please be sure to abide by the Github terms of service. Don’t abuse the Actions workflow.**
 
-
-<div align="center">
-
-[也可点击此处一键加群](https://qm.qq.com/cgi-bin/qm/qr?k=m_M1Fydi3MvrVAEM0Sp6hDfZF4N2SpXU&jump_from=webapi)
-
-qq 群二维码
-
-![qq群二维码](docs/IMG/qqgroup.png)
-
-</div>
 
 ## 功能列表
 
@@ -218,27 +192,6 @@ tips:从1.4.1版本开始，随机视频投币有一定的概率会将硬币投�
 
 ## 订阅执行结果
 
-### Server 酱 Turbo 版
-
-目前 Turbo 版本的消息通道支持以下渠道
-
-- 企业微信应用消息
-- Android，
-- Bark iOS，
-- 企业微信群机器人
-- 钉钉群机器人
-- 飞书群机器人
-- 自定义微信测试号
-- 方糖服务号
-
-1. 前往 [sct.ftqq.com](https://sct.ftqq.com/sendkey)点击登入，创建账号。
-2. 点击点[SendKey](https://sct.ftqq.com/sendkey) ，生成一个 Key 变量名为 `SERVERPUSHKEY`
-3. [配置消息通道](https://sct.ftqq.com/forward) ，选择方糖服务号，保存即可。
-4. 推送效果展示
-   ![图示](docs/IMG/wechatMsgPush.png)
-
-**旧版推送渠道[sc.ftqq.com](http://sc.ftqq.com/9.version0) 即将与 4 月底下线，请前往[sct.ftqq.com](https://sct.ftqq.com/sendkey)生成`Turbo`版本的`Key`，注意，申请 Turbo 版 Key 后请配置消息通道，如果想沿用以前的推送方式，选择方糖服务号即可**
-
 ### Telegram 订阅执行结果
 
 1. 在 Telegram 中添加 BotFather 这个账号，然后依次发送/start /newbot 按照提示即可创建一个新的机器人。记下来给你生成的 token。
@@ -279,23 +232,15 @@ _特别注意：需要先与机器人之间创建会话，机器人才能下发�
 2. 本工具不会记录任何执行过程中来自 b 站的数据信息，也不会上传到任何服务器上。（例如 av 号，bv 号，用户 uid 等）。
 3. 本工具执行过程中产生的日志，仅会在使用者自行配置推送渠道后进行推送。日志中不包含任何用户敏感信息。
 4. 如果你使用了第三方修改的，打包的本工具代码，请注意甄别，有可能会对你账号造成损失，同时也不要把自己的敏感信息（账号，cookies等）提供给他人。（**网络安全教育普及任重而道远**）
-5. 本工具源码仅在[JunzhouLiu/BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)开源，其余的地方的代码均不是我提交的。如果有人修改了本项目（或者直接使用本项目）盈利恰饭，或者给你造成了损失，和本人无关，我开源的目的单纯是技术分享，所有代码细节都公开。
+5. 本工具源码仅在[xiaojia21190/bili_helper](https://github.com/xiaojia21190/bili_helper)开源，其余的地方的代码均不是我提交的。如果有人修改了本项目（或者直接使用本项目）盈利恰饭，或者给你造成了损失，和本人无关，我开源的目的单纯是技术分享，所有代码细节都公开。
 6. 我开源本工具的代码仅仅是技术分享，没有任何丝毫的盈利赚钱目的，如果你给我投币，充电了，咱们之间也不构成任何雇佣，购买关系的交易。
 7. 本项目不会增加类似于自动转发抽奖，秒杀，下载版权受限视频等侵犯 UP 主/B 站权益的功能，开发这个应用的目的是单纯的技术分享。下游分支开发者/使用者也请不要滥用相关功能。
-8. 本项目遵守[MIT License](https://github.com/JunzhouLiu/BILIBILI-HELPER/blob/main/LICENSE)，请各位知悉。
+8. 本项目遵守[MIT License](https://github.com/xiaojia21190/bili_helper/blob/main/LICENSE)，请各位知悉。
 
 ## API 参考列表
 
 - [SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)
 - [happy888888/BiliExp](https://github.com/happy888888/BiliExp)
-
-## 基于本项目的衍生项目
-
-- **基于本项目的 docker 封装项目：[SuperNG6/docker-bilibili-helper](https://github.com/SuperNG6/docker-bilibili-helper)**
-
-- **基于本项目的 docker 镜像：[superng6/bilibili-helper](https://hub.docker.com/r/superng6/bilibili-helper)**
-
-- **基于本项目的 k8s 项目：[yangyang0507/k8s-bilibili-helper](https://github.com/yangyang0507/k8s-bilibili-helper)**
 
 ## 致谢
 
@@ -306,7 +251,3 @@ _特别注意：需要先与机器人之间创建会话，机器人才能下发�
 ## License
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJunzhouLiu%2FBILIBILI-HELPER.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FJunzhouLiu%2FBILIBILI-HELPER?ref=badge_large)
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/JunzhouLiu/BILIBILI-HELPER.svg)](https://starchart.cc/JunzhouLiu/BILIBILI-HELPER)
