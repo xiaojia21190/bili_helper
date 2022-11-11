@@ -10,8 +10,6 @@ import top.misec.push.model.PushMetaInfo;
 
 /**
  * Push Plus 推送
- *
- * @author itning
  * @since 2021/3/28 15:49
  */
 public class PushPlusPush extends AbstractPush {

@@ -9,8 +9,6 @@ import top.misec.push.model.PushMetaInfo;
 
 /**
  * 钉钉机器人
- *
- * @author itning
  * @since 2021/3/22 19:15
  */
 public class DingTalkPush extends AbstractPush {

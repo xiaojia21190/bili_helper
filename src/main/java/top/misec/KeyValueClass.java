@@ -4,8 +4,6 @@ import lombok.Data;
 
 /**
  * 外部配置
- *
- * @author itning
  * @since 2021/4/29 17:55
  */
 @Data

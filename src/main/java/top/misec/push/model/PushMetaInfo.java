@@ -5,8 +5,6 @@ import lombok.Getter;
 
 /**
  * 元信息
- *
- * @author itning
  * @since 2021/3/22 16:58
  */
 @Getter

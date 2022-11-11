@@ -5,8 +5,6 @@ import top.misec.push.model.PushResult;
 
 /**
  * 推送消息接口
- *
- * @author itning
  * @since 2021/3/22 16:36
  */
 @FunctionalInterface

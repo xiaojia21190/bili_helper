@@ -8,8 +8,6 @@ import top.misec.push.model.PushMetaInfo;
 
 /**
  * TG推送
- *
- * @author itning
  * @since 2021/3/22 17:55
  */
 public class TelegramPush extends AbstractPush {

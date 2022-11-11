@@ -48,7 +48,6 @@ Lv6 吧\~\~\~\~
     - [三、使用 Linux Crontab 方式](#三使用-linux-crontab-方式)
     - [自定义功能配置](#自定义功能配置)
   - [订阅执行结果](#订阅执行结果)
-    - [Server 酱 Turbo 版](#server-酱-turbo-版)
     - [Telegram 订阅执行结果](#telegram-订阅执行结果)
     - [钉钉机器人](#钉钉机器人)
     - [PushPlus(Push+)](#pushpluspush)
